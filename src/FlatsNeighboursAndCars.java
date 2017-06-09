@@ -65,7 +65,7 @@ public class FlatsNeighboursAndCars {
 
         for (int row = 0; row < 4; row++) {
             for (int col = 0; col < 4; col++) {
-                int nCars = Integer.parseInt(String.valueOf(Math.random() * 10000000).substring(0, 2)) + 1;
+                int nCars = (int)(Math.random()*101);
                 String apptAddress = String.valueOf(row) + String.valueOf(col);
                 System.out.println("Cars at appt address " + apptAddress + " is -->" + nCars);
                 nCarsAtApptMap.put(apptAddress, nCars);
